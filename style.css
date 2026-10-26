@@ -1,0 +1,600 @@
+/* =====================================================
+   ENIYAN S - PROFESSIONAL PORTFOLIO
+   Main Color Theme
+   ===================================================== */
+
+/* ---------- GOOGLE FONTS ---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap');
+
+
+/* ---------- COLOR VARIABLES ---------- */
+
+:root {
+    --background: #0F172A;
+    --primary: #2563EB;
+    --secondary: #38BDF8;
+    --text: #FFFFFF;
+    --cards: #1E293B;
+}
+
+
+/* ---------- BASIC RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+}
+
+
+/* Logo */
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: var(--secondary);
+}
+
+
+/* Navigation Links */
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--secondary);
+}
+
+
+/* ---------- HOME SECTION ---------- */
+
+.home {
+    min-height: 100vh;
+    max-width: 1200px;
+
+    margin: auto;
+    padding: 120px 30px 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+
+/* Home Text */
+
+.home-content {
+    flex: 1;
+}
+
+.hello {
+    color: var(--secondary);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.home-content h1 {
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 64px;
+    line-height: 1.1;
+
+    margin-bottom: 15px;
+}
+
+
+.home-content h2 {
+    color: var(--primary);
+
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+.intro {
+    max-width: 600px;
+
+    color: #CBD5E1;
+
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* ---------- BUTTONS ---------- */
+
+.home-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+
+.btn {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background: var(--primary);
+
+    color: var(--text);
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.btn:hover {
+    background: var(--secondary);
+    color: var(--background);
+
+    transform: translateY(-3px);
+}
+
+
+.secondary-btn {
+    background: transparent;
+
+    border: 2px solid var(--primary);
+}
+
+
+.secondary-btn:hover {
+    background: var(--primary);
+    color: var(--text);
+}
+
+
+/* ---------- PROFILE IMAGE ---------- */
+
+.home-image {
+    flex: 0 0 350px;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+.home-image img {
+    width: 320px;
+    height: 320px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid var(--primary);
+
+    box-shadow: 0 0 40px rgba(37, 99, 235, 0.4);
+
+    transition: 0.4s;
+}
+
+
+.home-image img:hover {
+    transform: scale(1.05);
+
+    border-color: var(--secondary);
+}
+
+
+/* ---------- COMMON SECTION ---------- */
+
+section {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 100px 30px;
+}
+
+
+section h2 {
+    font-family: 'Poppins', sans-serif;
+
+    text-align: center;
+
+    font-size: 38px;
+
+    margin-bottom: 50px;
+
+    color: var(--secondary);
+}
+
+
+/* ---------- ABOUT ---------- */
+
+.about {
+    text-align: center;
+}
+
+
+.about p {
+    max-width: 850px;
+
+    margin: 0 auto 20px;
+
+    color: #CBD5E1;
+
+    font-size: 17px;
+}
+
+
+/* ---------- SKILLS ---------- */
+
+.skills-container {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+.skill {
+    background: var(--cards);
+
+    padding: 12px 25px;
+
+    border-radius: 8px;
+
+    border: 1px solid rgba(56, 189, 248, 0.2);
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.skill:hover {
+    background: var(--primary);
+
+    transform: translateY(-5px);
+
+    border-color: var(--secondary);
+}
+
+
+/* ---------- PROJECTS ---------- */
+
+.project-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.project-card {
+    background: var(--cards);
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    border: 1px solid rgba(56, 189, 248, 0.15);
+
+    transition: 0.3s;
+}
+
+
+.project-card:hover {
+    transform: translateY(-10px);
+
+    border-color: var(--secondary);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+.project-card h3 {
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+
+    color: var(--secondary);
+}
+
+
+.project-card p {
+    color: #CBD5E1;
+
+    margin-bottom: 15px;
+}
+
+
+.technologies {
+    color: var(--secondary) !important;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+.project-link {
+    display: inline-block;
+
+    color: var(--secondary);
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.project-link:hover {
+    color: var(--text);
+}
+
+
+/* ---------- CONTACT ---------- */
+
+.contact {
+    text-align: center;
+}
+
+
+.contact > p {
+    color: #CBD5E1;
+
+    margin-bottom: 30px;
+
+    font-size: 17px;
+}
+
+
+.contact-links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+
+.contact-links a {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background: var(--cards);
+
+    color: var(--text);
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    border: 1px solid var(--primary);
+
+    transition: 0.3s;
+}
+
+
+.contact-links a:hover {
+    background: var(--primary);
+
+    border-color: var(--secondary);
+
+    transform: translateY(-3px);
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background: var(--cards);
+
+    text-align: center;
+
+    padding: 25px;
+
+    color: #CBD5E1;
+
+    border-top: 1px solid rgba(56, 189, 248, 0.1);
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+   ===================================================== */
+
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 900px) {
+
+    .home {
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+        padding-top: 130px;
+    }
+
+
+    .home-image {
+        flex: auto;
+    }
+
+
+    .intro {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .home-buttons {
+        justify-content: center;
+    }
+
+
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+
+    .logo {
+        font-size: 23px;
+    }
+
+
+    .nav-links {
+        gap: 12px;
+    }
+
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+
+    .home-content h1 {
+        font-size: 45px;
+    }
+
+
+    .home-content h2 {
+        font-size: 23px;
+    }
+
+
+    .intro {
+        font-size: 16px;
+    }
+
+
+    .home-image img {
+        width: 240px;
+        height: 240px;
+    }
+
+
+    section {
+        padding: 80px 20px;
+    }
+
+
+    section h2 {
+        font-size: 32px;
+    }
+
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .home-buttons {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .btn {
+        width: 200px;
+    }
+
+}
+/* ---------- SCROLL REVEAL ---------- */
+
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.8s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ---------- ACTIVE NAVIGATION ---------- */
+
+.nav-links a.active {
+    color: var(--secondary);
+}
